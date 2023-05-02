@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  funwithflags:
+    container_name: funwithflags
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - DATA_PROVIDERS=https://zretmlbsszmm4i35zrihcflchm0ktwwj.lambda-url.eu-central-1.on.aws/provider/flights1,https://zretmlbsszmm4i35zrihcflchm0ktwwj.lambda-url.eu-central-1.on.aws/provider/flights2
+      - LOGGING_LEVEL_COM_EPAM=debug
