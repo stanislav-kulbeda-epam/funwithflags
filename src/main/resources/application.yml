@@ -1,0 +1,15 @@
+data:
+  providers:
+    - 'https://zretmlbsszmm4i35zrihcflchm0ktwwj.lambda-url.eu-central-1.on.aws/provider/flights1'
+    - 'https://zretmlbsszmm4i35zrihcflchm0ktwwj.lambda-url.eu-central-1.on.aws/provider/flights2'
+  cache:
+    enabled: true
+    ttl: 60000
+
+spring:
+  cache:
+    type: simple
+
+logging:
+  level:
+    com.epam: debug

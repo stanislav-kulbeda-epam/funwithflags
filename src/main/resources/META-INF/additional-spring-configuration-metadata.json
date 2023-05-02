@@ -1,0 +1,20 @@
+{
+  "properties": [
+    {
+      "name": "data.providers",
+      "type": "java.util.List<java.lang.String>",
+      "description": "List of urls that provide Routes information"
+    },
+    {
+      "name": "data.cache.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Boolean to enable caching of Routes from Providers"
+    },
+    {
+      "name": "data.cache.ttl",
+      "type": "java.lang.Long",
+      "defaultValue": "60000",
+      "description": "Interval of refreshing Routes in the cache, in milliseconds. Default is 1 minute"
+    }
+  ]
+}
